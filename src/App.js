@@ -1,9 +1,19 @@
-import { Home } from "./Pages";
+import { Home, PopularDetailsPage } from "./Pages";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <div>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route
+            exact
+            path="/PopularDetailsPage/:id"
+            element={<PopularDetailsPage />}
+          />
+        </Routes>
+      </Router>
     </div>
   );
 }

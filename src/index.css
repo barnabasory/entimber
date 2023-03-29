@@ -33,20 +33,29 @@
 body {
   background-color: #fff;
   font-family: "MuseoSans", sans-serif;
+}
+
+.fw {
+  width: 100%;
+}
+
+.sw {
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;
 }
 
-.fw {
-  max-width: 100%;
-}
-
-.sw {
-}
-
 li {
   list-style: none;
   font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.8;
 }

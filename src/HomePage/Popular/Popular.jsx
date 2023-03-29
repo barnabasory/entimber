@@ -1,9 +1,10 @@
 import styles from "./Popular.module.scss";
 import data from "./data";
+import { Link } from "react-router-dom";
 
 const Popular = () => {
   return (
-    <section className={styles.popular_div}>
+    <section className={`sw ${styles.popular_div}`}>
       <div className={styles.title}>
         <h2>What's Popular</h2>
         <span>Popular, evergreen updates and how-to guides.</span>
@@ -12,10 +13,14 @@ const Popular = () => {
         {data.map((card) => {
           const { id, coverImage, title } = card;
           return (
-            <div className={styles.card} key={id}>
+            <Link
+              to={`/PopularDetailsPage/${id}`}
+              key={id}
+              className={styles.card}
+            >
               <img src={coverImage} alt={title} />
               <span className={styles.card_title}>{title}</span>
-            </div>
+            </Link>
           );
         })}
       </div>

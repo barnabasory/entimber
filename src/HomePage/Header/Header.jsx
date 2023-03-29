@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 const Header = () => {
   return (
     <section className={`fw ${styles.header_container}`}>
-      <div className={styles.header_content}>
+      <div className={`sw ${styles.header_content}`}>
         <span className={styles.logo}>entimber.</span>
         <nav className={styles.navlinks}>
           <ul>
