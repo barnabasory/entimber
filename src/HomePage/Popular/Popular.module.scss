@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: column;
   grid-gap: 30px;
+  margin-bottom: 100px;
 
   .title {
     display: flex;
@@ -28,11 +29,12 @@
 
     .card {
       grid-column: span 3;
-      height: 230px;
+
       width: 250px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       border-radius: 8px 8px 8px 8px;
       gap: 20px;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -42,7 +44,7 @@
       width: 100%;
 
       &:hover img {
-        transform: scale(1.012);
+        transform: scale(1.016);
         transition: transform 0.5s ease;
       }
 
@@ -57,7 +59,8 @@
       }
 
       .card_title {
-        padding-left: 20px;
+        height: 50px;
+        padding: 0 20 0 20px;
       }
     }
   }

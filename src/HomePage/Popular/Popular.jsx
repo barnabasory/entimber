@@ -1,8 +1,10 @@
 import styles from "./Popular.module.scss";
-import data from "./data";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import DataContext from "../../context/DataContext";
 
 const Popular = () => {
+  const { posts } = useContext(DataContext);
   return (
     <section className={`sw ${styles.popular_div}`}>
       <div className={styles.title}>
@@ -10,7 +12,7 @@ const Popular = () => {
         <span>Popular, evergreen updates and how-to guides.</span>
       </div>
       <div className={styles.cards}>
-        {data.map((card) => {
+        {posts.map((card) => {
           const { id, coverImage, title } = card;
           return (
             <Link

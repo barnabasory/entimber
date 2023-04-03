@@ -1,4 +1,4 @@
-import { Home, PopularDetailsPage } from "./Pages";
+import { Home, PopularDetailsPage, CreatePost } from "./Pages";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
             path="/PopularDetailsPage/:id"
             element={<PopularDetailsPage />}
           />
+          <Route exact path="/create-post" element={<CreatePost />} />
         </Routes>
       </Router>
     </div>

@@ -6,6 +6,7 @@ export { default as Popular } from "../HomePage/Popular/Popular";
 export { default as PopularHeader } from "../PopularPageComps/Header/PopularHeader";
 export { default as PopularMain } from "../PopularPageComps/Main/PopularMain";
 export { default as PopularDetailsPage } from "./PopularDetailsPage";
+export { default as CreatePost } from "../createPost/CreatePost";
 
 //images
 export { default as device } from "../assets/images/newsletter.png";
